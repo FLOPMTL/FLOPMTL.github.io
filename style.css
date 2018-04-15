@@ -1,0 +1,115 @@
+
+html {
+  /* overflow-y: hidden; */
+}
+
+body{
+  font-family: Helvetica, Arial;
+  background-color: #f48342;
+  color: white;
+}
+
+p {
+    font-family: "Helvetica";
+    text-align: center;
+}
+
+p.faq{
+  text-align: justify;
+  padding: 5cm;
+  padding-top: 0cm;
+}
+
+a {
+  padding-right: 1cm;
+    text-decoration: none;
+    font-family: "Helvetica";
+    text-align: center;
+    color: white;
+}
+
+img{
+  max-width:100%;
+  max-height:100%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+img.flopsie{
+  float: right;
+  max-width:90%;
+  max-height:90%;
+}
+
+
+h1{
+  font-size: 96px;
+  margin: 0;
+}
+
+h1.faq{
+  font-size: 36px;
+  text-align: center;
+}
+
+p.description{
+  text-align: left;
+
+}
+
+        /* div */
+
+div.left{
+  height:100%;
+  width: 50%;
+  float: right;
+  padding-top: 1cm;
+  padding-left: 5cm;
+}
+
+div.right{
+  height:100%;
+  width: 50%;
+  float: right;
+  /* overflow: visible; */
+  padding-top: 5cm;
+  padding-right: 5cm;
+  /* padding-left: 5cm; */
+}
+
+div.topcontainer{
+  position: relative;
+  display:flex;
+  height:100vh;
+}
+
+div.bottomcontainer{
+  position: relative;
+  display:flex;
+  padding-top: 2cm;
+}
+
+div.outer{
+  position: relative;
+}
+
+div.inner{
+  padding-top: 300px;
+  text-align: center;
+}
+
+div.top{
+  height:50%;
+  width:100%;
+  flex-grow: 1;
+  overflow: visible;
+}
+
+div.bottom{
+  position: absolute;
+  height:50%;
+  width:100%;
+  bottom: 0;
+  flex-grow: 1;
+  overflow: visible;
+}
