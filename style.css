@@ -6,7 +6,46 @@ html {
 body{
   font-family: Helvetica, Arial;
   background-color: #f48342;
+  /* background-color: #FDC202; */
   color: white;
+  margin: 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Helvetica";
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    padding-right: 0cm;
+}
+
+img{
+  /* max-width:100%;
+  max-height:100%;
+  min-width: 20%;
+  min-height: 20%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  margin-left: auto;
+	margin-right: auto;
+	display: block; */
+}
+
+img.flopsie{
+  float: right;
+  max-width:40%;
+  max-height:40%;
+}
+
+h1{
+  font-size: 200px;
+  /* margin: 0; */
+}
+
+h1.faq{
+  font-size: 36px;
+  text-align: center;
 }
 
 p {
@@ -20,51 +59,36 @@ p.faq{
   padding-top: 0cm;
 }
 
-a {
-  padding-right: 1cm;
-    text-decoration: none;
-    font-family: "Helvetica";
-    text-align: center;
-    color: white;
-}
-
-img{
-  max-width:100%;
-  max-height:100%;
-  overflow-x:hidden;
-  overflow-y:hidden;
-}
-
-img.flopsie{
-  float: right;
-  max-width:90%;
-  max-height:90%;
-}
-
-
-h1{
-  font-size: 96px;
-  margin: 0;
-}
-
-h1.faq{
-  font-size: 36px;
-  text-align: center;
-}
-
 p.description{
   text-align: left;
+}
 
+p.title{
+  font-size: 96px;
+  text-align: left;
+  padding: 0cm;
+  margin: 0cm;
 }
 
         /* div */
 
 div.left{
   height:100%;
-  width: 50%;
+  width: 40%;
   float: right;
-  padding-top: 1cm;
-  padding-left: 5cm;
+  padding-top: 3cm;
+  /* padding-left: 4cm; */
+  padding-right: 2cm;
+}
+
+div.center{
+  height:100%;
+  width: 60%;
+  float: center;
+  padding-top: 3cm;
+  padding-right: 4cm;
+  padding-left: 0cm;
+  text-align: center;
 }
 
 div.right{
@@ -72,21 +96,22 @@ div.right{
   width: 50%;
   float: right;
   /* overflow: visible; */
-  padding-top: 5cm;
-  padding-right: 5cm;
+  padding-top: 4cm;
+  padding-right: 3cm;
   /* padding-left: 5cm; */
 }
 
 div.topcontainer{
   position: relative;
   display:flex;
-  height:100vh;
+  /* height:100vh; */
+  padding-top: 0cm;
 }
 
 div.bottomcontainer{
   position: relative;
   display:flex;
-  padding-top: 2cm;
+  padding-top: 1cm;
 }
 
 div.outer{
