@@ -84,6 +84,17 @@ h1.title{
   margin: 0cm;
 }
 
+
+@media (min-width: 576px) and (max-width: 767px) {
+  h1.title{
+    font-size: 64px;
+  }
+
+  .presentation{
+    font-size: 0.9rem;
+  }
+}
+
 /* div */
 
 div.left{
