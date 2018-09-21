@@ -12,12 +12,12 @@ body{
 }
 
 a {
-    text-decoration: none;
-    font-family: "Helvetica";
-    text-align: center;
-    font-size: 18px;
-    color: white;
-    padding-right: 0cm;
+  text-decoration: none;
+  font-family: "Helvetica";
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding-right: 0cm;
 }
 
 img{
@@ -28,8 +28,8 @@ img{
   overflow-x:hidden;
   overflow-y:hidden;
   margin-left: auto;
-	margin-right: auto;
-	display: block; */
+  margin-right: auto;
+  display: block; */
 }
 
 img.flopsie{
@@ -38,39 +38,53 @@ img.flopsie{
   max-height:40%;
 }
 
-h1{
-  font-size: 200px;
-  /* margin: 0; */
-}
 
-h1.faq{
+h2.faq{
   font-size: 36px;
   text-align: center;
 }
 
 p {
-    font-family: "Helvetica";
-    text-align: center;
+  font-family: "Helvetica";
+  text-align: center;
 }
 
-p.faq{
+.faq{
   text-align: justify;
-  padding: 5cm;
-  padding-top: 0cm;
+  padding: 0 0.8em;
+}
+
+#flopsie-xs{
+  max-width: 50%;
+  height: auto;
+  margin: 20px 0;
+}
+
+@media (max-width: 767px) {
+  #faq-container{
+    margin-top : 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq{
+    padding: 0 12em;
+  }
 }
 
 p.description{
   text-align: left;
 }
 
-p.title{
+h1.title{
   font-size: 96px;
   text-align: left;
+  font-weight: bold;
   padding: 0cm;
   margin: 0cm;
 }
 
-        /* div */
+/* div */
 
 div.left{
   height:100%;
@@ -137,4 +151,12 @@ div.bottom{
   bottom: 0;
   flex-grow: 1;
   overflow: visible;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
