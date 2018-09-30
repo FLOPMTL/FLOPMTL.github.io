@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/wip/style/style.css">
+  <title>FLOP</title>
+
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//flopalitics.arthem.co/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+  </script>
+
+  <script type="text/javascript">
+  // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+  let vh = window.innerHeight * 0.01;
+  // Then we set the value in the --vh custom property to the root of the document
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+  var lastWidth =  window.innerWidth;
+
+  window.addEventListener('resize', () => {
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+
+    if(window.innerWidth != lastWidth){ //orientation change
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+
+    lastWidth =  window.innerWidth;
+  });
+
+
+
+  </script>
+  <!-- End Matomo Code -->
+
+
+</head>
+<body>
+
+  <!-- <nav class="navbar navbar-expand-md">
+  <ul class="nav navbar-nav ml-auto justify-content-end">
+
+
+
+  <li class="nav-item">
+  <a class="nav-link" href="http://10.0.0.141:4000/en/index.html"><u>EN</u></a>&nbsp
+</li>
+
+
+<li class="nav-item">
+<span class="navbar-text">|</span>
+</li>
+
+
+  <li class="nav-item">
+  <a class="nav-link" href="http://10.0.0.141:4000/fr/index.html"><u>FR</u></a>&nbsp
+</li>
+
+
+
+</ul>
+</nav> -->
+
+<nav>
+  <ul class="languages">
+
+
+
+    <li>
+      <a href="http://10.0.0.141:4000/wip/en/index.html"><u>EN</u></a>
+    </li>
+
+    <li>
+      <span>|</span>
+    </li>
+
+
+    <li>
+      <a href="http://10.0.0.141:4000/wip/fr/index.html"><u>FR</u></a>
+    </li>
+
+
+  </ul>
+</nav>
+<section id="landing">
+
+  <div class="vertical-center">
+    <div class="container-fluid presentation">
+      <div class="row align-items-center">
+        <div class="col-lg-3 offset-lg-1 col-sm-3" id="flopsie-col">
+          <img class="img-fluid d-none d-sm-block" id="flopsie" src="/img/flopsie.gif" alt="">
+        </div>
+        <div class="col-lg-6 col-sm-9 offset-lg-1">
+          <!-- <div class="align-self-center"> -->
+
+            <div><h1 id="title">FLOP</h1> <span id="tagline">FLIPIDDY FLOP, FLOPPIDDY FLOUP</span></div>
+<!-- <h1 class="title">FLOP</h1> -->
+            <div class="row d-sm-none" >
+              <div class="col-xs-12">
+                <img id="flopsie-mobile" class="mx-auto d-block" src="/img/flopsie.gif" alt="">
+              </div>
+            </div>
+            <p class="description">FLOP est un regroupement serré de créateurs et créatrices qui travaillent ensemble pour produire des expériences ludiques alternatives qui s’éloignent des jeux vidéo traditionnels.<br/><br/>
+Autour de rencontres mensuelles, nous agissons en tant qu’incubateur et atelier ouvert qui accueille autant de vétérans de l’industrie que de néophytes curieux.
+</p>
+
+
+
+            <ul>
+              <li>
+                <a class="flop-links" href="https://flopgames.itch.io/" target="_blank"><u>JEUX</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="#faq"><u>FAQ</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="https://twitter.com/flopmtl" target="_blank"><u>TWITTER</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="https://www.facebook.com/flopmtl" target="_blank"><u>FACEBOOK</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="https://discord.gg/n7Jmnay" target="_blank"><u>DISCORD</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="mailto:flopmtl@gmail.com"><u>CONTACT</u></a>&nbsp
+              </li>
+              <li>
+                <a class="flop-links" href="https://www.facebook.com/flopmtl" target="_blank"><u>PRESSKIT</u></a>
+              </li>
+
+            </ul>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="vertical-center">
+
+
+    <div class="container-fluid" id="faq-container">
+      <a name="faq"></a>
+      <h2 class="faq">FAQ</h2>
+      <p class="faq">
+
+        <b>Q : Vous faites quoi, vous, FLOP? </b><br>
+        On organise principalement des rencontres mensuelles dans le cadre desquelles tout le monde est le ou la bienvenu.e à présenter des prototypes ou simplement venir regarder ce que les autres ont fait. FLOP organise aussi beaucoup d’autres activités liées aux jeux vidéo alternatifs, comme des ateliers ou des expositions.
+        <br><br>
+
+        <b>Q : À qui s’adresse les rencontres? </b><br>
+        Quiconque s’intéressant à la création, au visionnement ou à la découverte de jeux vidéo non-conventionnels. Pas besoin d’être dev, ni même gamer. Pas besoin d’amener quoi que ce soit non plus!
+        <br><br>
+
+        <b>Q : À quoi ressemble une rencontre ? </b><br>
+        C’est plus informel que tu penses. On ne fait que demander, “est-ce que quelqu’un a un jeu à présenter?”, certaines personnes lèvent la main et on commence. On joue d’abord au jeu présenté sur un projecteur, et quand c’est terminé on en discute en groupe, que ce soit pour donner du feedback, ou pour avoir une discussion plus ouverte sur le processus ou le design.
+        <br><br>
+
+        <b>Q : Wow, ça me semble épeurant. Je me sens pas mal gêné.e de faire ça devant des inconnus. </b><br>
+        Ça peut paraître épeurant la première fois, mais sache que FLOP est reconnu pour être un endroit accueillant où tout est permis, que ce soit des jeux terminés ou incomplets, bizarres ou clichés, sophistiqués ou brisés. Si t’es débutant.e, c’est certain qu’on sera particulièrement intéressés à t’aider à t’améliorer.
+        <br><br>
+
+        <b>Q : Et quelles sont les règles des rencontres? </b><br>
+        Notre unique règle : pas de pitch, pas de vidéo, juste du live. On doit aussi préciser qu’on a aucune tolérance pour le racisme, le sexisme, l’homophobie, la transphobie, le capacitisme ainsi que tout autre discours haineux d’une quelconque nature.
+        <br><br>
+
+        <b>Q : Est-ce que ces affaires-là sont vraiment des jeux vidéo? </b><br>
+        Des fois oui, des fois non. On s’en fout un peu, en fait. Une question plus constructive serait “pourquoi est-ce qu’on pourrait dire que ça, c’est un jeu vidéo? Et qu’est-ce que je considère être un jeu vidéo?”.
+        <br><br>
+
+        <b>Q : J’aime pas les gens. J’aime pas parler. Est-ce que je peux venir et ne pas participe </b><br>
+        Certain! Soit conscient.e que des gens vont peut-être venir te parler. Tant que tu es courtois.e et agréable, on devrait bien s’entendre.
+        <br><br>
+
+        <b>Q : J’ai fait un jeu! Mais il est poche! Allez-vous le juger? Allez-vous me juger? </b><br>
+        On ne pense pas vraiment en terme de “c’est hot / c’est poche”. En fait on est pas mal certain.e.s que ton jeu n’est pas poche et qu’il y a au moins quelque chose qu’on va y trouver d’intéressant.
+        <br><br>
+
+        <b>Q : Je n’ai pas fait de jeux, et je me sens cheap… Allez-vous quand même m’accepter? </b><br>
+        Bien sûr.
+        <br><br>
+
+        <b>Q : Êtes-vous des étudiant.e.s? Est-ce que j’ai besoin d’être étudiant.e aussi? </b><br>
+        Non! FLOP est indépendant de toute institution académique. Tu n’as pas besoin d’être étudiant.e, professionnel.le, ni même joueur.euse. En autant que tu es ouvert.e par rapport à ce que nous présentons, tu es le.la bienvenu.e.
+        <br><br>
+
+        <b>Q : Ma campagne Kickstarter est su’à coche. Je passer la montrer? </b><br>
+        Non. Les rencontres de FLOP ne sont pas le bon endroit pour promouvoir ton jeu. Ce qui nous intéresse, c’est le design et le processus créatif. Tu peux venir nous montrer ton jeu développé dans un but commercial sans problème, en nous parlant d’un aspect spécifique de son design, ou en nous partageant ton expérience et ce que tu as appris.
+        <br><br>
+
+      </p>
+    </div>
+  </div>
+</section>
+
+<script src="/js/smoothscroll.js" charset="utf-8"></script>
+</body>
+</html>

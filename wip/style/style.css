@@ -1,0 +1,247 @@
+
+html{
+  width: 100% !important;
+}
+
+body{
+  font-family: Helvetica, Arial;
+  background-color: #f48342;
+  /* background-color: #FDC202; */
+  color: white;
+  margin: 0;
+  width: 100% !important;
+}
+
+/* section {
+height: 100vh;
+height: calc(var(--vh, 1vh) * 100);
+} */
+
+
+a {
+  font-family: "Helvetica";
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  padding-right: 0cm;
+}
+
+u{
+  text-decoration: none;
+}
+
+.flop-links {
+  text-decoration: underline;
+}
+
+nav{
+  /* margin: 10px 20px; */
+  position: absolute;
+  right: 20px;
+  top : 10px;
+  z-index:1000;
+}
+
+
+#flopsie-mobile{
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+#landing{
+margin-top: 0px;
+}
+} */
+
+.languages{
+  text-align: right;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  display:inline;
+}
+
+img{
+  /* max-width:100%;
+  max-height:100%;
+  min-width: 20%;
+  min-height: 20%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  margin-left: auto;
+  margin-right: auto;
+  display: block; */
+}
+
+img.flopsie{
+  float: right;
+  max-width:40%;
+  max-height:40%;
+}
+
+
+h2.faq{
+  font-size: 36px;
+  text-align: center;
+}
+
+p {
+  font-family: "Helvetica";
+  text-align: center;
+  /* margin-bottom: 0; */
+}
+
+.faq{
+  text-align: justify;
+  padding: 0 0.8em;
+}
+
+/* xl */
+@media (min-width: 1200px) {
+  #faq-container{
+    padding: 0 12em;
+  }
+
+
+}
+
+/* not lg */
+@media (max-width: 1199px) {
+  #tagline{
+    display: none;
+  }
+}
+
+/* xs */
+@media (max-width: 575px) {
+  #faq-container{
+    margin-top : 2.5em;
+  }
+}
+
+p.description{
+  text-align: left;
+}
+
+#title{
+  font-size: 72pt;
+  text-align: left;
+  font-weight: bold;
+  padding: 0cm;
+  margin: 0cm;
+  display: inline;
+}
+
+@media (max-width: 359px) {
+  #title{
+    font-size: 60pt;
+  }
+}
+
+#tagline{
+  color : rgba(0,0,0,0);
+}
+
+
+/* sm */
+@media (min-width: 576px) and (max-width: 767px) {
+  h1.title{
+    font-size: 64px;
+  }
+
+  .presentation{
+    font-size: 0.9rem;
+  }
+
+
+  #flopsie-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+}
+
+/* div */
+
+div.left{
+  height:100%;
+  width: 40%;
+  float: right;
+  padding-top: 3cm;
+  /* padding-left: 4cm; */
+  padding-right: 2cm;
+}
+
+div.center{
+  height:100%;
+  width: 60%;
+  float: center;
+  padding-top: 3cm;
+  padding-right: 4cm;
+  padding-left: 0cm;
+  text-align: center;
+}
+
+div.right{
+  height:100%;
+  width: 50%;
+  float: right;
+  /* overflow: visible; */
+  padding-top: 4cm;
+  padding-right: 3cm;
+  /* padding-left: 5cm; */
+}
+
+div.topcontainer{
+  position: relative;
+  display:flex;
+  /* height:100vh; */
+  padding-top: 0cm;
+}
+
+div.bottomcontainer{
+  position: relative;
+  display:flex;
+  padding-top: 1cm;
+}
+
+div.outer{
+  position: relative;
+}
+
+div.inner{
+  padding-top: 300px;
+  text-align: center;
+}
+
+div.top{
+  height:50%;
+  width:100%;
+  flex-grow: 1;
+  overflow: visible;
+}
+
+div.bottom{
+  position: absolute;
+  height:50%;
+  width:100%;
+  bottom: 0;
+  flex-grow: 1;
+  overflow: visible;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  align-items: center;
+}
