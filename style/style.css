@@ -42,6 +42,20 @@ nav{
   z-index:1000;
 }
 
+/* #dancing{
+  background-image: none;
+  background-size: contain;
+  width: auto;
+  display: inline-block;
+}
+
+#dancing:hover {
+  background-image: url("/img/flopsie_dancing.gif");
+}
+
+#flopsie:hover{
+  visibility: hidden;
+} */
 
 #flopsie-mobile{
   max-width: 100%;
@@ -159,6 +173,10 @@ p.description{
 
   .presentation{
     font-size: 0.9rem;
+  }
+
+  section{
+    /* margin-bottom: 50px; */
   }
 
 
