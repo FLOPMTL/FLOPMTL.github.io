@@ -1,6 +1,6 @@
 
-html {
-  /* overflow-y: hidden; */
+html{
+  width: 100% !important;
 }
 
 body{
@@ -9,15 +9,78 @@ body{
   /* background-color: #FDC202; */
   color: white;
   margin: 0;
+  width: 100% !important;
 }
 
+/* section {
+height: 100vh;
+height: calc(var(--vh, 1vh) * 100);
+} */
+
+
 a {
-  text-decoration: none;
   font-family: "Helvetica";
   text-align: center;
   font-size: 18px;
   color: white;
   padding-right: 0cm;
+}
+
+u{
+  text-decoration: none;
+}
+
+.flop-links {
+  text-decoration: underline;
+}
+
+nav{
+  /* margin: 10px 20px; */
+  position: absolute;
+  right: 20px;
+  top : 10px;
+  z-index:1000;
+}
+
+/* #dancing{
+  background-image: none;
+  background-size: contain;
+  width: auto;
+  display: inline-block;
+}
+
+#dancing:hover {
+  background-image: url("/img/flopsie_dancing.gif");
+}
+
+#flopsie:hover{
+  visibility: hidden;
+} */
+
+#flopsie-mobile{
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+
+
+/* @media (min-width: 576px) and (max-width: 767px) {
+#landing{
+margin-top: 0px;
+}
+} */
+
+.languages{
+  text-align: right;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  display:inline;
 }
 
 img{
@@ -47,6 +110,7 @@ h2.faq{
 p {
   font-family: "Helvetica";
   text-align: center;
+  /* margin-bottom: 0; */
 }
 
 .faq{
@@ -54,21 +118,26 @@ p {
   padding: 0 0.8em;
 }
 
-#flopsie-xs{
-  max-width: 50%;
-  height: auto;
-  margin: 20px 0;
+/* xl */
+@media (min-width: 1200px) {
+  #faq-container{
+    padding: 0 12em;
+  }
+
+
 }
 
-@media (max-width: 767px) {
-  #faq-container{
-    margin-top : 70px;
+/* not lg */
+@media (max-width: 1199px) {
+  #tagline{
+    display: none;
   }
 }
 
-@media (min-width: 768px) {
-  .faq{
-    padding: 0 12em;
+/* xs */
+@media (max-width: 575px) {
+  #faq-container{
+    margin-top : 2.5em;
   }
 }
 
@@ -76,15 +145,27 @@ p.description{
   text-align: left;
 }
 
-h1.title{
-  font-size: 96px;
+#title{
+  font-size: 72pt;
   text-align: left;
   font-weight: bold;
   padding: 0cm;
   margin: 0cm;
+  display: inline;
+}
+
+@media (max-width: 359px) {
+  #title{
+    font-size: 60pt;
+  }
+}
+
+#tagline{
+  color : rgba(0,0,0,0);
 }
 
 
+/* sm */
 @media (min-width: 576px) and (max-width: 767px) {
   h1.title{
     font-size: 64px;
@@ -93,6 +174,17 @@ h1.title{
   .presentation{
     font-size: 0.9rem;
   }
+
+  section{
+    /* margin-bottom: 50px; */
+  }
+
+
+  #flopsie-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 }
 
 /* div */
@@ -167,7 +259,7 @@ div.bottom{
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
   min-height: 100vh; /* These two lines are counted as one :-)       */
-
+  min-height: calc(var(--vh, 1vh) * 100);
   display: flex;
   align-items: center;
 }
