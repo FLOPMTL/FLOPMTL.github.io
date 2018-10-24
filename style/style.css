@@ -21,6 +21,7 @@ height: calc(var(--vh, 1vh) * 100);
 a {
   font-family: "Helvetica";
   text-align: center;
+  text-decoration: underline;
   font-size: 18px;
   color: white;
   padding-right: 0cm;
