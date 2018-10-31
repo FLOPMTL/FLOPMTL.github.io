@@ -155,6 +155,10 @@ p.description{
   display: inline;
 }
 
+#title:hover{
+  cursor: pointer;
+}
+
 @media (max-width: 359px) {
   #title{
     font-size: 60pt;
