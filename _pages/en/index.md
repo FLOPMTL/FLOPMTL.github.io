@@ -4,7 +4,7 @@ lang: en
 description: |
 
   FLOP is a group of creators based in Montreal working together to create playful and alternative experiences that stray from traditional video games.<br/><br/>
-  Around <a href="https://www.facebook.com/events/2078333325754162/" target="_blank">monthly meetups</a>, we act as an incubator and open atelier, welcoming industry veterans and curious neophytes alike.
+  Around <a href="https://www.facebook.com/events/387528575177428/" target="_blank">monthly meetups</a>, we act as an incubator and open atelier, welcoming industry veterans and curious neophytes alike.
 permalink: "/en/index.html"
 jeux : games
 faq :
