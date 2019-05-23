@@ -3,7 +3,7 @@ layout: default
 lang : fr
 description: |
   FLOP est un regroupement serré de créateurs et créatrices montréalais.e.s qui travaillent ensemble pour produire des expériences ludiques alternatives qui s’éloignent des jeux vidéo traditionnels.<br/><br/>
-  Autour de <a href="https://www.facebook.com/events/2078333325754162/" target="_blank">rencontres mensuelles</a>, nous agissons en tant qu’incubateur et atelier ouvert qui accueille autant de vétérans de l’industrie que de néophytes curieux.
+  Autour de <a href="https://www.facebook.com/events/387528575177428/" target="_blank">rencontres mensuelles</a>, nous agissons en tant qu’incubateur et atelier ouvert qui accueille autant de vétérans de l’industrie que de néophytes curieux.
 
 permalink: "/fr/index.html"
 redirect_from:
