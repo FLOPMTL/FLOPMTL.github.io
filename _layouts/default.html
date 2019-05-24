@@ -74,9 +74,7 @@
 </nav> -->
 
 <nav>
-  <ul class="languages">
-
-
+  <ul id="languages" class="navigation">
     {% for lang in site.languages %}
     <li>
       <a href="{{site.url}}/{{lang}}/index.html"><u>{{ lang | upcase }}</u></a>
@@ -128,6 +126,9 @@
             </li>
             <li>
               <a class="flop-links" href="https://discord.gg/n7Jmnay" target="_blank"><u>DISCORD</u></a>&nbsp
+            </li>
+            <li>
+              <a class="flop-links" href="/{{page.lang}}/artcade2019_presskit.html"><u>ARTCADE</u></a>&nbsp
             </li>
             <li>
               <a class="flop-links" href="mailto:flopmtl@gmail.com"><u>CONTACT</u></a>&nbsp
