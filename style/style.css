@@ -14,6 +14,15 @@ body{
   height: 100%;
 }
 
+::selection {
+  color: white; /* WebKit/Blink Browsers */
+  background: #3399ff;
+}
+::-moz-selection {
+  color: white; /* Gecko Browsers */
+  background: #3399ff;
+}
+
 /* section {
 height: 100vh;
 height: calc(var(--vh, 1vh) * 100);
