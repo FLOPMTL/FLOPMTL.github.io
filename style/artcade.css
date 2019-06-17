@@ -1,0 +1,40 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+}
+
+.menu li {
+    display: inline-block;
+    float: left;
+    clear: left;
+    margin-top: -10px;
+}
+
+.menu li a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    font-size: 3.5em;
+}
+
+#description {
+    position: fixed;
+    width: 32vw;
+    top: 10vh;
+    right: 5vw;
+}
+
+#description p {
+    font-family: 'Oswald', sans-serif;
+    text-align: right;
+    font-size: 1.8em;
+}
+
+#artcade-logo {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+}

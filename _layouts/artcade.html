@@ -15,6 +15,7 @@
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
   <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <link rel="stylesheet" type="text/css" href="/style/artcade.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <title>Artcade 2019 | FLOP</title>
 
@@ -61,45 +62,6 @@
 
   <style>
 
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position:fixed;
-  top:10vh;
-  left:10vh;
-  }
-
-
-  .menu li {
-      display: inline-block;
-      float: left;
-    clear: left;
-    margin-top: -10px;
-  }
-
-  .menu li a
-  {
-    font-family: 'Oswald', sans-serif;
-    text-decoration : none;
-    font-size: 3.5em;
-  }
-
-#description
-{
-  position: fixed;
-  width : 32vw; 
-  top:10vh;
-  right:5vw;
-}
-
-#description p
-{
-  font-family: 'Oswald', sans-serif;
-  text-align:  right;
-  font-size: 1.8em;
-}
-
     .cb-slideshow,
     .cb-slideshow:after {
       position: fixed;
@@ -108,11 +70,6 @@
       top: 0px;
       left: 0px;
       z-index: -1;
-    }
-
-    .cb-slideshow:after {
-      content: '';
-      /*background: transparent url('http://pehaa.com/wp-content/uploads/2009/03/pattern1.png') repeat top left;*/
     }
 
     {% assign nmimg = 0 %}
@@ -216,7 +173,7 @@
       {% endfor %}
   </ul>
 
-  <div style="position: fixed; bottom:5vh; right:5vw;"><img class="img-fluid" src="/img/artcade2019_logo.png" alt=""></div>
+  <div id="artcade-logo"><img class="img-fluid" src="/img/artcade2019_logo.png" alt=""></div>
 
   <div id="description">
       <p>{{page.description | upcase}}</p>
