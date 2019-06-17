@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="{{page.lang}}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
+<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+  <title>Artcade 2019 | FLOP</title>
+
+
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function () {
+      var u = "//flopalitics.arthem.co/";
+      _paq.push(['setTrackerUrl', u + 'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.type = 'text/javascript'; g.async = true; g.defer = true; g.src = u + 'piwik.js'; s.parentNode.insertBefore(g, s);
+    })();
+  </script>
+
+  <script type="text/javascript">
+    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    let vh = window.innerHeight * 0.01;
+    // Then we set the value in the --vh custom property to the root of the document
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+    var lastWidth = window.innerWidth;
+
+    window.addEventListener('resize', () => {
+      // We execute the same script as before
+      let vh = window.innerHeight * 0.01;
+
+      if (window.innerWidth != lastWidth) { //orientation change
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+      }
+
+      lastWidth = window.innerWidth;
+    });
+
+
+
+  </script>
+  <!-- End Matomo Code -->
+
+
+  <style>
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position:fixed;
+  top:10vh;
+  left:10vh;
+  }
+
+
+  .menu li {
+      display: inline-block;
+      float: left;
+    clear: left;
+    margin-top: -10px;
+  }
+
+  .menu li a
+  {
+    font-family: 'Oswald', sans-serif;
+    text-decoration : none;
+    font-size: 3.5em;
+  }
+
+#description
+{
+  position: fixed;
+  width : 32vw; 
+  top:10vh;
+  right:5vw;
+}
+
+#description p
+{
+  font-family: 'Oswald', sans-serif;
+  text-align:  right;
+  font-size: 1.8em;
+}
+
+    .cb-slideshow,
+    .cb-slideshow:after {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+    }
+
+    .cb-slideshow:after {
+      content: '';
+      /*background: transparent url('http://pehaa.com/wp-content/uploads/2009/03/pattern1.png') repeat top left;*/
+    }
+
+    {% assign nmimg = 0 %}
+  {% for image in site.static_files %}
+  {% if image.path contains 'artcade2019/images' %}
+  {% capture nmimg %}{{  nmimg | plus:1}} {% endcapture %}
+  {% endif %}
+  {% endfor %}
+
+
+  {% capture duration %}{{nmimg | times:3}}{% endcapture %}
+  {% capture startingtime %}{{duration | times : 5.0 | divided_by:nmimg | times: 4.0 | divided_by : 100.0}} {% endcapture %}
+
+    .cb-slideshow li span {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      color: transparent;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      opacity: 0;
+      z-index: 0;
+      backface-visibility: hidden;
+      animation: imageAnimation {{duration}}s linear infinite 0s;
+    }
+
+
+
+    {% assign index = 0 %}
+  {% for image in site.static_files %}
+  {% if image.path contains 'artcade2019/images' %}
+  .cb-slideshow li:nth-child({{index | plus:1}}) span {
+      animation-delay:     {{index| times:3 | minus:startingtime}}s;
+      background-image: url("{{ site.baseurl }}{{ image.path }}");
+    }
+  {% capture index %}{{  index | plus:1}} {% endcapture %}
+  {% endif %}
+  {% endfor %}
+
+    @keyframes imageAnimation {
+      0% {
+        opacity: 1;
+        transform: translateX(100%);
+      }
+
+      {{5.0 | divided_by:nmimg | times: 4}}% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      {{25.0 | divided_by:nmimg | times: 4}}% {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      {{30.0 | divided_by:nmimg | times: 4}}% {
+        opacity: 1;
+        transform: translateX(-100%);
+      }
+
+      {{31.0 | divided_by:nmimg | times: 4}}% {
+        opacity: 0;
+      }
+    }
+    /* Show at least something wsupported */
+    .no-cssanimations .cb-slideshow li span {
+      opacity: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <ul class="menu">
+      <li><a href="/{{page.lang}}/index.html">{{page.home | upcase}}</a></li>
+      <li><a href="facebook">{{page.fbevent | upcase}}</a></li>
+    </ul>
+
+    <ul id="languages" class="navigation">
+        {% for lang in site.languages %}
+        <li>
+          <a href="{{page.url | replace: page.lang, lang }}"><u>{{ lang | upcase }}</u></a>
+        </li>
+        {% if forloop.last == false %}
+        <li>
+          <span>|</span>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
+
+  </nav>
+  <ul class="cb-slideshow">
+      {% for image in site.static_files %}
+      {% if image.path contains 'artcade2019/images' %}
+      <li> <span></span> </li>
+      {% endif %}
+      {% endfor %}
+  </ul>
+
+  <div style="position: fixed; bottom:5vh; right:5vw;"><img class="img-fluid" src="/img/artcade2019_logo.png" alt=""></div>
+
+  <div id="description">
+      <p>{{page.description | upcase}}</p>
+    </div>
+
+</body>
+
+</html>
