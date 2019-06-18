@@ -14,6 +14,7 @@
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
     crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
+  <link href="/style/hamburgers.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/style/style.css">
   <link rel="stylesheet" type="text/css" href="/style/artcade.css">
 <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
@@ -179,6 +180,26 @@
       <p>{{page.description | upcase}}</p>
     </div>
 
+    <!-- </button> -->
+    <!-- <button id="hamburger-button" type="button" class="btn btn-link waves-effect waves-light">   
+         <span class="hamburger"></span>
+    </button> -->
+
+    <button class="hamburger hamburger--3dx" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
+      
+    <script>
+    
+    $(".hamburger").on('click', function()
+    {
+      $(this).toggleClass("is-active");
+ $("#description").toggleClass("translate-description");
+ $(".menu").toggleClass("translate-menu");
+    });
+    </script>
 </body>
 
 </html>
