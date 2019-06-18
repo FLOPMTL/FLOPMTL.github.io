@@ -39,6 +39,17 @@
     right: 5vw;
 }
 
+.hamburger {
+    display: none;
+}
+
+.hamburger:focus 
+{
+    outline: none;
+}
+
+/* mobile */
+
 @media (max-width: 575px) {
     #artcade-logo {
         width: 50vw;
@@ -62,23 +73,26 @@
     #description p {
         font-size: 3.3vh;
     }
-
-    .translate-description
-    {
+    .translate-description {
         transform: translateX(150%);
     }
-
-    .translate-menu
-    {
+    .translate-menu {
         transform: translateX(0);
     }
 
-    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-      {
-        background-color : #fff;
+
+    .hamburger {
+        display: inline-block;
     }
 
-    .hamburger.is-active .hamburger-inner, .hamburger.is-active .hamburger-inner:after, .hamburger.is-active .hamburger-inner:before {
-        background-color : #fff;
+    .hamburger-inner,
+    .hamburger-inner:after,
+    .hamburger-inner:before {
+        background-color: #fff;
+    }
+    .hamburger.is-active .hamburger-inner,
+    .hamburger.is-active .hamburger-inner:after,
+    .hamburger.is-active .hamburger-inner:before {
+        background-color: #fff;
     }
 }
