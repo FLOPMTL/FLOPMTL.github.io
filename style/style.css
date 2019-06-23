@@ -1,11 +1,17 @@
-
 html{
   width: 100% !important;
   height: 100%;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 body{
-  font-family: Helvetica, Arial;
+  font-family: Helvetica, sans-serif;
   background-color: #f48342;
   /* background-color: #FDC202; */
   color: white;
@@ -30,7 +36,6 @@ height: calc(var(--vh, 1vh) * 100);
 
 
 a {
-  font-family: "Helvetica";
   text-align: center;
   text-decoration: underline;
   font-size: 18px;
@@ -163,7 +168,6 @@ h2.faq{
 }
 
 p {
-  font-family: "Helvetica";
   text-align: center;
   /* margin-bottom: 0; */
 }

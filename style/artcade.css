@@ -1,23 +1,134 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #1e1e1e;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-fluid {
+    overflow-x: hidden;
+    clip-path: content-box;
+}
+
+@media (max-width: 575px) {
+    p {
+        font-size: 1.25em;
+        line-height: 2;
+    }
+    #trailer {
+        order: -1;
+    }
+}
+
+/* really small */
+@media (max-width: 350px) { 
+    p {
+        font-size: 0.75em;
+    }
+
+    .hidden-really-small
+    {
+        display: none;
+    }
+}
+
+
 .menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    position: fixed;
-    top: 10vh;
-    left: 10vh;
+    position: absolute;
+    top: 11vh;
+    left: 3.5vw;
 }
 
 .menu li {
     display: inline-block;
     float: left;
     clear: left;
+    /* margin-top: -10px; */
+}
+
+.menu li:not(:first-child) {
     margin-top: -10px;
 }
 
 .menu li a {
-    font-family: 'Oswald', sans-serif;
     text-decoration: none;
-    font-size: 3.5em;
+    font-size: 2.2em;
+}
+
+.fullview-section {
+    height: 100%;
+    /* Fallback for browsers do NOT support vh unit */
+    height: 100vh;
+    overflow-x: hidden;
+    /* These two lines are counted as one :-)       */
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+#artcade-info {
+    width: 90%;
+    width: 90vw;
+    margin: auto;
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.info-flex-child {
+    width: 50%;
+    flex: 1 0 auto;
+    align-self: center;
+}
+
+#artcade-logo-info {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.sponsor-logo {
+    min-width: 0;
+    min-height: 0;
+    flex: 0 1 auto;
+    height: 100%;
+}
+
+.sponsor-logo img {
+    width: 100%;
+    height: auto;
+}
+
+#artcade-logo {
+    position: absolute;
+    width: 17vw;
+    bottom: 8vh;
+    left: 5vw;
+}
+
+@media (max-width: 575px) {
+    .info-flex-child {
+        width: 100%;
+    }
+    #artcade-logo {
+        width: 50vw;
+    }
 }
 
 #description {
@@ -33,66 +144,8 @@
     font-size: 1.8em;
 }
 
-#artcade-logo {
-    position: fixed;
-    bottom: 5vh;
-    right: 5vw;
-}
-
-.hamburger {
-    display: none;
-}
-
-.hamburger:focus 
-{
-    outline: none;
-}
-
-/* mobile */
-
-@media (max-width: 575px) {
-    #artcade-logo {
-        width: 50vw;
-    }
-    .menu {
-        top: 75px;
-        left: 20px;
-        transform: translateX(-120%);
-        transition: transform 0.5s;
-    }
-    .menu li {
-        margin-top: 0px;
-    }
-    .menu li a {
-        font-size: 2em;
-    }
-    #description {
-        transition: transform 0.5s;
-        top: 5vh;
-    }
-    #description p {
-        font-size: 3.3vh;
-    }
-    .translate-description {
-        transform: translateX(150%);
-    }
-    .translate-menu {
-        transform: translateX(0);
-    }
-
-
-    .hamburger {
-        display: inline-block;
-    }
-
-    .hamburger-inner,
-    .hamburger-inner:after,
-    .hamburger-inner:before {
-        background-color: #fff;
-    }
-    .hamburger.is-active .hamburger-inner,
-    .hamburger.is-active .hamburger-inner:after,
-    .hamburger.is-active .hamburger-inner:before {
-        background-color: #fff;
-    }
+#languages a {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8em;
+    text-decoration: none;
 }
