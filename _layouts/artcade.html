@@ -147,8 +147,8 @@
 <body>
   <nav>
     <ul class="menu">
-      <li><a href="/{{page.lang}}/index.html">{{page.home | upcase}}</a></li>
-      <li><a href="#info">{{page.fbevent | upcase}}</a></li>
+      <li><a href="/{{page.lang}}/index.html">{{page.tickets}}</a></li>
+      <li><a href="#info">INFO</a></li>
     </ul>
 
     <ul id="languages" class="navigation">
@@ -190,24 +190,24 @@
           </div>
         </div>
         <div class="p-2 info-flex-child">
-          <p>UNE EXPOSITION ANNUELLE DE JEUX VIDÉO ALTERNATIFS
-            PERCHÉE SUR UNE TERRASSE AU COEUR DU CENTRE-VILLE
-            LE VENDREDI 26 JUILLET SEULEMENT</p>
+          <p>{{page.description | upcase}}</p>
           <br class="hidden-really-small" />
-          <p>RÉSERVEZ VOTRE BILLET DÈS MAINTENANT</p>
+          <p>{{page.getyourticket | upcase}}</p>
         </div>
+
+        <!-- need to get proper logos, not cropped from a screenshot -->
         <div class="p-2 info-flex-child">
           <div style="padding : 0 8% 0 8%" class="d-flex flex-row">
-            <div class="sponsor-logo">
+            <div class="partner-logo">
               <img src="/assets/artcade2019/sponsors/flop.png" alt="">
             </div>
-            <div class="sponsor-logo">
+            <div class="partner-logo">
               <img src="/assets/artcade2019/sponsors/tag.png" alt="">
             </div>
-            <div class="sponsor-logo">
+            <div class="partner-logo">
               <img src="/assets/artcade2019/sponsors/squareenix.png" alt="">
             </div>
-            <div class="sponsor-logo">
+            <div class="partner-logo">
               <img src="/assets/artcade2019/sponsors/ubisoft.png" alt="">
             </div>
           </div>
@@ -215,33 +215,6 @@
       </div>
     </section>
   </div>
-  <!-- 
-  <div id="description">
-      <p>{{page.description | upcase}}</p>
-    </div> -->
-
-  <!-- </button> -->
-  <!-- <button id="hamburger-button" type="button" class="btn btn-link waves-effect waves-light">   
-         <span class="hamburger"></span>
-    </button> -->
-
-  <!-- <button class="hamburger hamburger--3dx" type="button">
-        <span class="hamburger-box">
-          <span class="hamburger-inner"></span>
-        </span>
-      </button>
-      
-    <script>
-    
-    $(".hamburger").on('click', function()
-    {
-      $(this).toggleClass("is-active");
- $("#description").toggleClass("translate-description");
- $(".menu").toggleClass("translate-menu");
-    });
-    </script> -->
-
-  <!-- <script src="/js/smoothscroll.js" charset="utf-8"></script> -->
 </body>
 
 </html>
