@@ -147,7 +147,7 @@
 <body>
   <nav>
     <ul class="menu">
-      <li><a href="/{{page.lang}}/index.html">{{page.tickets}}</a></li>
+      <li><a href="/{{page.lang}}/index.html">{{page.ticket}}S</a></li>
       <li><a href="#info">INFO</a></li>
     </ul>
 
@@ -189,10 +189,11 @@
               height="480"></iframe>
           </div>
         </div>
-        <div class="p-2 info-flex-child">
+        <div id="description" class="p-2 info-flex-child">
           <p>{{page.description | upcase}}</p>
           <br class="hidden-really-small" />
-          <p>{{page.getyourticket | upcase}}</p>
+          {% capture ticketlink %}<a href="/{{page.lang}}/index.html">{{page.ticket}}</a>{% endcapture %}
+          <p>{{page.getyourticket | replace : page.ticket, ticketlink }}</p>
         </div>
 
         <!-- need to get proper logos, not cropped from a screenshot -->

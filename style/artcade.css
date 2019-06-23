@@ -12,9 +12,14 @@ body {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     line-height: 2;
     white-space: pre-line;
+}
+
+p a
+{
+    font-size: 1em;
 }
 
 @media (max-width: 575px) {
@@ -33,9 +38,9 @@ p {
 
 /* really small */
 @media (max-width: 350px) { 
-    p {
-        font-size: 0.75em;
-    }
+    p{
+        font-size: 0.75rem;
+    }    
 
     .hidden-really-small
     {
@@ -140,23 +145,4 @@ p {
     #artcade-logo {
         width: 50vw;
     }
-}
-
-#description {
-    position: fixed;
-    width: 32vw;
-    top: 10vh;
-    right: 5vw;
-}
-
-#description p {
-    font-family: 'Oswald', sans-serif;
-    text-align: right;
-    font-size: 1.8em;
-}
-
-#languages a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1.8em;
-    text-decoration: none;
 }

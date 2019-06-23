@@ -2,7 +2,7 @@
 layout: artcade
 lang : fr
 permalink: "fr/artcade2019.html"
-tickets : "BILLETS"
+ticket : "BILLET"
 fbevent: "info"
 description: |
     UNE EXPOSITION ANNUELLE DE JEUX VIDÉO ALTERNATIFS
