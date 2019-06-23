@@ -9,17 +9,26 @@ body {
 
 .container-fluid {
     overflow-x: hidden;
-    clip-path: content-box;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 2;
+    white-space: pre-line;
 }
 
 @media (max-width: 575px) {
     p {
         font-size: 1.25em;
-        line-height: 2;
+        white-space: normal;
     }
     #trailer {
         order: -1;
     }
+
+    .container-fluid {
+        -webkit-clip-path: content-box;
+    }    
 }
 
 /* really small */
@@ -103,14 +112,14 @@ body {
     padding-right: 50px;
 }
 
-.sponsor-logo {
+.partner-logo {
     min-width: 0;
     min-height: 0;
     flex: 0 1 auto;
     height: 100%;
 }
 
-.sponsor-logo img {
+.partner-logo img {
     width: 100%;
     height: auto;
 }
