@@ -9,4 +9,7 @@ description: |
     PERCHÉE SUR UNE TERRASSE AU COEUR DU CENTRE-VILLE
     LE VENDREDI 26 JUILLET SEULEMENT
 getyourticket : RÉSERVEZ VOTRE BILLET DÈS MAINTENANT
+presentedby : "présenté par"
+goldsponsors : "Commanditaires Niveau Or"
+silversponsors : "Commanditaires Niveau argent"
 ---

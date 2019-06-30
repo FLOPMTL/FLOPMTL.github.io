@@ -185,8 +185,7 @@
         </div>
         <div id="trailer" class="p-2 info-flex-child">
           <div class="iframe-container">
-            <iframe src="https://drive.google.com/file/d/1qEns_9Ty33gqrsY2bIM1mG4MPSBeot8z/preview" width="640"
-              height="480"></iframe>
+              <iframe width="640" height="480" src="https://www.youtube.com/embed/MjRDH98cdCI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
         <div id="description" class="p-2 info-flex-child">
@@ -194,28 +193,52 @@
           <br class="hidden-really-small" />
           {% capture ticketlink %}<a href="/{{page.lang}}/index.html">{{page.ticket}}</a>{% endcapture %}
           <p>{{page.getyourticket | replace : page.ticket, ticketlink }}</p>
-        </div>
-
-        <!-- need to get proper logos, not cropped from a screenshot -->
-        <div class="p-2 info-flex-child">
-          <div style="padding : 0 8% 0 8%" class="d-flex flex-row">
-            <div class="partner-logo">
-              <img src="/assets/artcade2019/sponsors/flop.png" alt="">
-            </div>
-            <div class="partner-logo">
-              <img src="/assets/artcade2019/sponsors/tag.png" alt="">
-            </div>
-            <div class="partner-logo">
-              <img src="/assets/artcade2019/sponsors/squareenix.png" alt="">
-            </div>
-            <div class="partner-logo">
-              <img src="/assets/artcade2019/sponsors/ubisoft.png" alt="">
-            </div>
-          </div>
-        </div>
+        </div>  
       </div>
     </section>
+    <section id="artcade-sponsors">
+      <div id="sponsor-list" class="container-fluid d-flex flex-wrap h-100">
+        <div class="sponsor-row">
+          <h3 class="sponsor-title">{{page.presentedby | upcase}}</h3>
+        </div>
+        <div class="sponsor-row">
+          <div class="sponsor-flex-image">
+            <img class="sponsor-image" src="/assets/artcade2019/sponsors/flop.png" alt="">
+          </div>
+          <div class="sponsor-flex-image">
+            <img class="sponsor-image" src="/assets/artcade2019/sponsors/tag.png" alt="">
+          </div>
+        </div>
+        <div class="sponsor-row">
+            <h3 class="sponsor-title">{{page.goldsponsors | upcase}}</h3>
+          </div>
+        <div class="sponsor-row">
+          <div class="sponsor-flex-image">
+            <img class="sponsor-image" src="/assets/artcade2019/sponsors/ubisoft.png" alt="">
+          </div>
+          <div class="sponsor-flex-image">
+            <img class="sponsor-image" src="/assets/artcade2019/sponsors/ludia.png" alt="">
+          </div>
+        </div>
+      <div class="sponsor-row">
+          <h3 class="sponsor-title">{{page.silversponsors | upcase}}</h3>
+        </div>
+      <div class="sponsor-row">
+        <div class="sponsor-flex-image">
+          <img class="sponsor-image" src="/assets/artcade2019/sponsors/dawson.png" alt="">
+        </div>
+        <div class="sponsor-flex-image">
+          <img class="sponsor-image" src="/assets/artcade2019/sponsors/ivgd.png" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+    </section>
   </div>
+  <footer>
+      <p>© 2016-2019 FLOP.</p>
+      <p><strong>PHOTOS: </strong>MICHAEL HEMINGWAY, DAVIS SIEU, VJOSANA SHKURTI</p>
+    </footer> 
 </body>
 
 </html>

@@ -9,4 +9,7 @@ description: |
     ON A TERRACE SURROUNDED BY SKYSCRAPERS
     ONLY ON FRIDAY, JULY 26TH
 getyourticket : GET YOUR TICKET RIGHT NOW
+presentedby : "presented by"
+goldsponsors : "gold sponsors"
+silversponsors : "silver sponsors"
 ---
