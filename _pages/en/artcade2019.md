@@ -5,7 +5,7 @@ permalink: "en/artcade2019.html"
 ticket: "TICKET"
 fbevent: "Facebook event"
 description: |
-    AN ANNUAL ALTERNATIVE VIDEOGAMES EXHIBIT
+    AN ANNUAL ALTERNATIVE GAMES EXHIBIT
     ON A TERRACE SURROUNDED BY SKYSCRAPERS
     ONLY ON FRIDAY, JULY 26TH
 getyourticket : GET YOUR TICKET NOW
