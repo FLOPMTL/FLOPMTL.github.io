@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, minimal-ui">
   <meta property="og:type" content="website" />
   <meta property="og:image" content="http://badbauds.io/flop/artcade2019_thumbnail.jpg" />
-<meta property="og:image:type" content="image/jpeg" /> 
-<meta property="og:image:width" content="1200" /> 
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="627" />
   <meta property="og:description" content="{{page.description}}" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
@@ -197,7 +197,7 @@
         <div id="description" class="p-2 info-flex-child">
           <p>{{page.description | upcase}}</p>
           <br class="hidden-really-small" />
-          {% capture ticketlink %}<a href="https://www.facebook.com/events/2362418480710839/">{{page.ticket}}</a>{% endcapture %}
+          {% capture ticketlink %}<a href="https://www.facebook.com/events/2362418480710839/" target="_blank">{{page.ticket}}</a>{% endcapture %}
           <p>{{page.getyourticket | replace : page.ticket, ticketlink }}</p>
         </div>
       </div>
