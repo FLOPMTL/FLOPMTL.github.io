@@ -3,12 +3,17 @@ layout: default
 lang : fr
 description: |
   FLOP est un regroupement serré de créateurs et créatrices montréalais.e.s qui travaillent ensemble pour produire des expériences ludiques alternatives qui s’éloignent des jeux vidéo traditionnels.<br/><br/>
-  Autour de <a href="https://www.facebook.com/events/387528575177428/" target="_blank">rencontres mensuelles</a>, nous agissons en tant qu’incubateur et atelier ouvert qui accueille autant de vétérans de l’industrie que de néophytes curieux.
+  Autour de <a class="flop-links" href="https://www.facebook.com/events/387528575177428/" target="_blank">rencontres mensuelles</a>, nous agissons en tant qu’incubateur et atelier ouvert qui accueille autant de vétérans de l’industrie que de néophytes curieux.
 
 permalink: "/fr/index.html"
 redirect_from:
   - /
 jeux : jeux
+artcade_description: |
+    UNE EXPOSITION ANNUELLE DE JEUX ALTERNATIFS
+    PERCHÉE SUR UNE TERRASSE AU COEUR DU CENTRE-VILLE
+    LE VENDREDI 26 JUILLET SEULEMENT
+artcade_learnmore : "en savoir plus"
 faq :
   -
     q : Ok c’est cool les jeux vidéo pis toute, mais vous faites quoi vous, FLOP?

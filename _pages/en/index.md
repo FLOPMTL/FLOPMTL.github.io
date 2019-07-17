@@ -7,6 +7,11 @@ description: |
   Around <a href="https://www.facebook.com/events/387528575177428/" target="_blank">monthly meetups</a>, we act as an incubator and open atelier, welcoming industry veterans and curious neophytes alike.
 permalink: "/en/index.html"
 jeux : games
+artcade_description: |
+    AN ANNUAL ALTERNATIVE GAMES EXHIBIT
+    ON A TERRACE SURROUNDED BY SKYSCRAPERS
+    ONLY ON FRIDAY, JULY 26TH
+artcade_learnmore : "learn more"
 faq :
   -
     q : So games are cool and all, but what is it you do, FLOP?

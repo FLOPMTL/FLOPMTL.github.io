@@ -9,6 +9,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"></script>
   <link rel="stylesheet" type="text/css" href="/style/style.css">
+  <link rel="stylesheet" type="text/css" href="/style/artcadepromo.css">
+  <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <title>FLOP</title>
 
 
@@ -50,58 +52,53 @@
 
   </script>
   <!-- End Matomo Code -->
-
-
 </head>
+
 <body>
 
-  <!-- <nav class="navbar navbar-expand-md">
-  <ul class="nav navbar-nav ml-auto justify-content-end">
+<div id="artcade-promo">
+<div id="flopxtagcontainer">
+  <img src="/img/flopxtagpresent_{{page.lang}}.png" alt="">
+</div>
 
+<p>{{page.artcade_description}}</p>
+<p id="ensavoirplus">
+  <a href="/{{page.lang}}/artcade2019.html">{{page.artcade_learnmore | upcase}}</a>
+</p>
 
-  {% for lang in site.languages %}
-  <li class="nav-item">
-  <a class="nav-link" href="{{site.url}}/{{lang}}/index.html"><u>{{ lang | upcase }}</u></a>&nbsp
-</li>
-
-{% if forloop.last == false %}
-<li class="nav-item">
-<span class="navbar-text">|</span>
-</li>
-{% endif %}
-{% endfor %}
-</ul>
-</nav> -->
-
+</div>
+<div id="scrolldown-indicator">
+  <div id="arrowcontainer">
+    <a href="#floplanding">
+      <img src="/img/arrow.gif" alt="">
+    </a>
+  </div>
+</div>
 <nav>
-  <ul id="languages" class="navigation">
-    {% for lang in site.languages %}
-    <li>
-      <a href="{{site.url}}/{{lang}}/index.html"><u>{{ lang | upcase }}</u></a>
-    </li>
-    {% if forloop.last == false %}
-    <li>
-      <span>|</span>
-    </li>
-    {% endif %}
-    {% endfor %}
-  </ul>
-</nav>
+    <ul id="languages" class="navigation">
+      {% for lang in site.languages %}
+      <li>
+        <a href="{{site.url}}/{{lang}}/index.html"><u>{{ lang | upcase }}</u></a>
+      </li>
+      {% if forloop.last == false %}
+      <li>
+        <span>|</span>
+      </li>
+      {% endif %}
+      {% endfor %}
+    </ul>
+  </nav>
 <section id="landing">
-
+    <a name="floplanding"></a>
   <div class="vertical-center">
     <div class="container-fluid presentation">
       <div class="row align-items-center">
         <div class="col-lg-3 offset-lg-1 col-sm-4" id="flopsie-col">
-          <!-- <div id="dancing"> -->
           <img class="img-fluid d-none d-sm-block" id="flopsie" src="/img/flopsie_idle.gif" onmouseover="this.src = '/img/flopsie_dancing.gif'" onmouseout="this.src = '/img/flopsie_idle.gif'" alt="">
-          <!-- </div> -->
         </div>
         <div class="col-lg-6 col-sm-8 offset-lg-1">
-          <!-- <div class="align-self-center"> -->
 
           <div><h1 id="title">FLOP</h1> <span id="tagline">FLIPIDDY FLOP, FLOPPIDDY FLOUP</span></div>
-          <!-- <h1 class="title">FLOP</h1> -->
           <div class="row d-sm-none" >
             <div class="col-xs-12">
               <img id="flopsie-mobile" class="mx-auto d-block" src="/img/flopsie_idle.gif" alt="">

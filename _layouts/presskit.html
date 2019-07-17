@@ -57,19 +57,19 @@
   <nav>
     <ul id="artcade_links" class="navigation">
       <li>
-        <a href="/{{page.lang}}/index.html"><u>{{page.home | upcase}}</u></a>
+        <a class="flop-links" href="/{{page.lang}}/index.html"><u>{{page.home | upcase}}</u></a>
       </li>
       <li>
         <span>|</span>
       </li>
       <li>
-        <a href="/{{page.lang}}/artcade2019_presskit.html"><u>PRESSKIT</u></a>
+        <a class="flop-links" href="/{{page.lang}}/artcade2019_presskit.html"><u>PRESSKIT</u></a>
       </li>
       <li>
         <span>|</span>
       </li>
       <li>
-        <a href="/{{page.lang}}/artcade2019_sponsordeck.html"><u>SPONSOR DECK</u></a>
+        <a class="flop-links" href="/{{page.lang}}/artcade2019_sponsordeck.html"><u>SPONSOR DECK</u></a>
       </li>
     </ul>
 
@@ -78,7 +78,7 @@
     <ul id="languages" class="navigation">
       {% for lang in site.languages %}
       <li>
-        <a href="{{page.url | replace: page.lang, lang }}"><u>{{ lang | upcase }}</u></a>
+        <a class="flop-links" href="{{page.url | replace: page.lang, lang }}"><u>{{ lang | upcase }}</u></a>
       </li>
       {% if forloop.last == false %}
       <li>
@@ -93,7 +93,7 @@
     <object data="{{page.pdf_url}}" type="application/pdf" class="pdf">
       <!-- <embed src="{{page.pdf_url}}" class="pdf"/> -->
       <p>This browser does not support PDFs. Please download the PDF to view it:
-        <a href="{{page.pdf_url}}">Download PDF</a>.</p>
+        <a class="flop-links" href="{{page.pdf_url}}">Download PDF</a>.</p>
       <!-- </embed> -->
     </object>
     <!-- <div class="pdf" style="background-color : blue;">

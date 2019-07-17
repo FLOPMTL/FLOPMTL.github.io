@@ -1,0 +1,59 @@
+#scrolldown-indicator
+{
+  width: 100%;
+  height: 20vh;
+
+  display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#arrowcontainer{
+height: 50%;
+width: auto;
+}
+
+#arrowcontainer img{
+height: 100%;
+width: auto;
+}
+
+#artcade-promo {
+  background-image: url('/assets/artcade2019/images/artcade15.jpg');
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  padding-top: 5vh;
+  overflow-y: auto;
+  background-size: cover;
+}
+
+#artcade-promo p {
+  white-space: pre-line;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.5vh !important;
+  }
+
+#flopxtagcontainer
+{
+  text-align: center; 
+  width: 35vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+#ensavoirplus
+{
+  font-size: 1.5rem;
+}
+
+#flopxtagcontainer img
+{
+  width: 100%;
+  height: auto;
+}
